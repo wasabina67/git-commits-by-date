@@ -17,6 +17,7 @@ def main():
     plt.xticks(rotation=45)
     plt.grid(True)
     plt.tight_layout()
+
     plt.savefig("graph.png")
 
 
