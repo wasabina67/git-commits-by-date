@@ -8,6 +8,8 @@ def main():
     df.set_index("date", inplace=True)
 
     plt.plot(df.index, df["num"])
+    # plt.bar(df.index, df["num"], color="skyblue")
+
     plt.title("Git Commits by Date")
     fontsize_dict = {"fontsize": 8}
     plt.xlabel("Date", fontsize_dict)
