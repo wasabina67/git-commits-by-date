@@ -26,4 +26,6 @@ git --no-pager log --shortstat --pretty=format:'%ad' --date=short \
 python run.py
 ```
 
-![](graph.png)
+![](images/plot.png)
+
+![](images/bar.png)
