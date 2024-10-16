@@ -1,6 +1,16 @@
 # git-commits-by-date
 Git Commits by Date
 
+## Setup
+
+```bash
+pipenv shell
+```
+
+```bash
+pipenv sync --dev
+```
+
 ## Create daily_commits.csv
 
 ```bash
