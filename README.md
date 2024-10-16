@@ -26,10 +26,14 @@ git --no-pager log --shortstat --pretty=format:'%ad' --date=short \
 python run.py
 ```
 
-<div align="center">
+### plot.png
+
+<div align="left">
   <img src="images/plot.png">
 </div>
 
-<div align="center">
+### bar.png
+
+<div align="left">
   <img src="images/bar.png">
 </div>
