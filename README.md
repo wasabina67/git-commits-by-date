@@ -9,3 +9,5 @@ git --no-pager log --shortstat --pretty=format:'%ad' --date=short \
 | uniq -c \
 | awk -v 'OFS=,' '{print $1,$2}' > summary.csv
 ```
+
+## Create graph.png
