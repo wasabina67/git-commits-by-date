@@ -11,3 +11,5 @@ git --no-pager log --shortstat --pretty=format:'%ad' --date=short \
 ```
 
 ## Create graph.png
+
+![](graph.png)
