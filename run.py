@@ -11,9 +11,8 @@ def main():
     # plt.bar(df.index, df["num"], color="skyblue")
 
     plt.title("Git Commits by Date")
-    fontsize_dict = {"fontsize": 8}
-    plt.xlabel("Date", fontsize_dict)
-    plt.ylabel("Commits", fontsize_dict)
+    plt.xlabel("Date", fontsize=8)
+    plt.ylabel("Commits", fontsize=8)
 
     plt.xticks(rotation=45)
     plt.grid(True)
