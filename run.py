@@ -24,7 +24,7 @@ def main(style):
     plt.grid(True)
     plt.tight_layout()
 
-    plt.savefig("graph.png")
+    plt.savefig(f"images/{style}.png")
 
 
 if __name__ == "__main__":
