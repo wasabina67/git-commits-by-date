@@ -1,14 +1,20 @@
+import sys
+
 import matplotlib.pyplot as plt
 import pandas as pd  # type: ignore
 
 
-def main():
+def main(style):
     df = pd.read_csv("daily_commits.csv", names=["num", "date"])
     df["date"] = pd.to_datetime(df["date"])
     df.set_index("date", inplace=True)
 
-    plt.plot(df.index, df["num"])
-    # plt.bar(df.index, df["num"], color="skyblue")
+    if style == "plot":
+        plt.plot(df.index, df["num"])
+    elif style == "bar":
+        plt.bar(df.index, df["num"], color="skyblue")
+    else:
+        raise Exception("Invalid style provided. Use 'plot' or 'bar'.")
 
     plt.title("Git Commits by Date")
     plt.xlabel("Date", fontsize=8)
@@ -22,4 +28,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) == 2:
+        style = sys.argv[1]
+        if style in ["plot", "bar"]:
+            main(style)
