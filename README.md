@@ -22,8 +22,16 @@ git --no-pager log --shortstat --pretty=format:'%ad' --date=short \
 
 ## Create graph.png
 
+### plot
+
 ```bash
-python run.py
+python run.py plot
+```
+
+### bar
+
+```bash
+python run.py bar
 ```
 
 ### plot.png
