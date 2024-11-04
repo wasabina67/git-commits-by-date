@@ -10,7 +10,7 @@ def main(style):
     df.set_index("date", inplace=True)
 
     if style == "plot":
-        plt.plot(df.index, df["num"])
+        plt.plot(df.index, df["num"], color="skyblue")
     elif style == "bar":
         plt.bar(df.index, df["num"], color="skyblue")
     else:
