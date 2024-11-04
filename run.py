@@ -10,9 +10,9 @@ def main(style):
     df.set_index("date", inplace=True)
 
     if style == "plot":
-        plt.plot(df.index, df["num"], color="skyblue")
+        plt.plot(df.index, df["num"], color="blue")
     elif style == "bar":
-        plt.bar(df.index, df["num"], color="skyblue")
+        plt.bar(df.index, df["num"], color="blue")
     else:
         raise Exception("Invalid style provided. Use 'plot' or 'bar'.")
 
