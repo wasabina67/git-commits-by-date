@@ -20,7 +20,7 @@ git --no-pager log --shortstat --pretty=format:'%ad' --date=short \
 | awk -v 'OFS=,' '{print $1,$2}' > daily_commits.csv
 ```
 
-## Create graph.png
+## Create PNG
 
 ### plot
 
