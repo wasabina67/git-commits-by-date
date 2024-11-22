@@ -1,5 +1,5 @@
 # git-commits-by-date
-Git Commits by Date
+Git commits by date
 
 ## Setup
 
